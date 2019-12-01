@@ -1,0 +1,141 @@
+:root {
+  --mainColor: rgb(92, 84, 176);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+}
+.hero .hero-img,
+.hero .hero-content {
+  max-width: 50%;
+}
+
+.hero-img img {
+  width: 200%;
+  margin: auto;
+}
+
+.card {
+  padding: 40px;
+  width: 100%;
+  border: 1px solid #0005;
+  border-radius: 10px;
+  box-shadow: -0.5px 0.5px 4px 2px #0005;
+  height: auto;
+  position: relative;
+  left: 150px;
+}
+
+.card.card-content {
+  padding: 20px;
+  width: 400px;
+}
+
+.input-field {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="number"] {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background: transparent;
+  border-bottom: 2px solid #0008;
+  width: 250px;
+  display: block;
+  padding: 5px;
+  transition: width 0.35s ease-in-out;
+}
+
+.input-field input:focus {
+  border-color: var(--mainColor);
+  /* width: 350px; */
+}
+
+.input-field input::placeholder {
+  font-size: 12px;
+}
+
+.input-field label {
+  background: var(--mainColor);
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0.25px 0.25px 2px 2px #0005;
+}
+
+.btn:hover {
+  box-shadow: 0.25px 0.25px 2px 2px #0009;
+}
+
+.btn-primary {
+  background: var(--mainColor);
+  color: #fff;
+}
+
+.submit-btn {
+  box-shadow: 0.25px 0.25px 2px 2px #0005;
+  position: relative;
+  left: 275px;
+  top: 10px;
+}
+
+/* .input-field label {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 5px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+}
+
+.input-field input:focus ~ label {
+  transition: 0.5s;
+  bottom: 18px;
+  font-size: 12px;
+  color: var(--mainColor);
+}
+
+.input-field input:valid ~ label {
+  font-size: 12px;
+  color: var(--mainColor);
+} */
